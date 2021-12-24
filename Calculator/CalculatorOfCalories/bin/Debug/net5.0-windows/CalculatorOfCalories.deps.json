@@ -1,0 +1,76 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "CalculatorOfCalories/1.0.0": {
+        "dependencies": {
+          "MaterialDesignColors": "2.0.5-ci11-ci11",
+          "MaterialDesignThemes": "4.4.0-ci11-ci11",
+          "NLog": "5.0.0-preview.3"
+        },
+        "runtime": {
+          "CalculatorOfCalories.dll": {}
+        }
+      },
+      "MaterialDesignColors/2.0.5-ci11-ci11": {
+        "runtime": {
+          "lib/netcoreapp3.1/MaterialDesignColors.dll": {
+            "assemblyVersion": "2.0.5.0",
+            "fileVersion": "2.0.5.0"
+          }
+        }
+      },
+      "MaterialDesignThemes/4.4.0-ci11-ci11": {
+        "dependencies": {
+          "MaterialDesignColors": "2.0.5-ci11-ci11"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/MaterialDesignThemes.Wpf.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.4.0.0"
+          }
+        }
+      },
+      "NLog/5.0.0-preview.3": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.329"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CalculatorOfCalories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MaterialDesignColors/2.0.5-ci11-ci11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dBEHrlEJ2mBw3nW03QXTiXEQGoKBixfk8+ZBy2aXNHJS3cITFTwfLQefmWOTzVny+5Xubwr7qc/QEKzF2q0Evg==",
+      "path": "materialdesigncolors/2.0.5-ci11-ci11",
+      "hashPath": "materialdesigncolors.2.0.5-ci11-ci11.nupkg.sha512"
+    },
+    "MaterialDesignThemes/4.4.0-ci11-ci11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g6+SuSFRH0GH5njVEXITD25pQRNv+RH1TiFt+F0+2Vvi47Fs+3iMWF3dTfawHGu6iBIqaYYniN8rxdiVgi1aog==",
+      "path": "materialdesignthemes/4.4.0-ci11-ci11",
+      "hashPath": "materialdesignthemes.4.4.0-ci11-ci11.nupkg.sha512"
+    },
+    "NLog/5.0.0-preview.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EoHyVPS2f0UXBvdsAMvMVSMmnmWKBaTBrwi4UW9skoc1hbuaEoJAWKZ3faEAEv8jTSdaaTqwnIhzXXEO7qW8UQ==",
+      "path": "nlog/5.0.0-preview.3",
+      "hashPath": "nlog.5.0.0-preview.3.nupkg.sha512"
+    }
+  }
+}

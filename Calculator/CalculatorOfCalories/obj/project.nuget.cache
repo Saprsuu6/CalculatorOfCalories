@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "pyOyWS7PcGMBkeo5L/9X3SvWy/vfWi3cwM6eUDsVvW8SoJqEHjRgWgMtLLpnzLBVZOroW4QKhX1bf38owilg+Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\coffe\\Desktop\\CommandCalculator\\CommandCalculator-test3\\CalculatorOfCalories\\CalculatorOfCalories.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\coffe\\.nuget\\packages\\materialdesigncolors\\2.0.5-ci11-ci11\\materialdesigncolors.2.0.5-ci11-ci11.nupkg.sha512",
+    "C:\\Users\\coffe\\.nuget\\packages\\materialdesignthemes\\4.4.0-ci11-ci11\\materialdesignthemes.4.4.0-ci11-ci11.nupkg.sha512",
+    "C:\\Users\\coffe\\.nuget\\packages\\nlog\\5.0.0-preview.3\\nlog.5.0.0-preview.3.nupkg.sha512"
+  ],
+  "logs": []
+}
