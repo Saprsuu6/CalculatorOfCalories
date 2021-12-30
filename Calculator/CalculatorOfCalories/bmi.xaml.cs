@@ -40,7 +40,8 @@ namespace CalculatorOfCalories
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            // save
+            save.Invoke(this, new EventArgs());
+            MessageBox.Show("You BMI was saved", "", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }

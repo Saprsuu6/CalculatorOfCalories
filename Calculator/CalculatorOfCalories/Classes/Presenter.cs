@@ -32,7 +32,7 @@ namespace CalculatorOfCalories
             mainWindow.saveResult += new EventHandler<EventArgs>(SaveResult);
             mainWindow.EventSaveListOfProducts += new EventHandler<EventArgs>(SaveListOfProducts);
             mainWindow.EventSaveListOfDishes += new EventHandler<EventArgs>(SaveListOfDishes);
-            mainWindow.EventBMI += new EventHandler<EventArgs> (BMI);
+            mainWindow.EventBMI += new EventHandler<EventArgs> (PersonBMI);
 
             logger.Info("Application was run");
         }
@@ -521,8 +521,8 @@ namespace CalculatorOfCalories
         }
         #endregion
 
-        #region BMI
-        private void BMI(object? sender, EventArgs e)
+        #region PersonBMI
+        private void PersonBMI(object? sender, EventArgs e)
         {
             bmi? bmi = sender as bmi;
             bmi.save += new EventHandler<EventArgs>(SaveBMI);
@@ -540,7 +540,9 @@ namespace CalculatorOfCalories
 
         private void SaveBMI(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            bmi? bmi = sender as bmi;
+            BMI.Save(bmi.GetSetMass, bmi.GetSetHeight,
+                double.Parse(bmi.Result.Text), bmi.Comment.Text);
         }
         #endregion
     }

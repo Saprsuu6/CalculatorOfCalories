@@ -1,0 +1,4 @@
+Your mass: 70
+Your height: 185
+Your BMI: 0.0020452885317750183
+Comment: Severe underweight

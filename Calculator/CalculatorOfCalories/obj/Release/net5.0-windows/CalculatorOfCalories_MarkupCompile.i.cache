@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET5_0;NETCOREAPP
 C:\Users\coffe\Desktop\CalculatorOfCalories\Calculator\CalculatorOfCalories\App.xaml
-9-1488598748
+10-1420266380
 1-1514852157
-19-575901706
+21-834684674
 196-94552652
-AddDish.xaml;AddProduct.xaml;ChangeDish.xaml;ChangeProduct.xaml;DaleteProduct.xaml;DeleteDish.xaml;MainWindow.xaml;Resources\DarkTheme.xaml;Resources\LightTheme.xaml;
+AddDish.xaml;AddProduct.xaml;bmi.xaml;ChangeDish.xaml;ChangeProduct.xaml;DaleteProduct.xaml;DeleteDish.xaml;MainWindow.xaml;Resources\DarkTheme.xaml;Resources\LightTheme.xaml;
 
 False
 

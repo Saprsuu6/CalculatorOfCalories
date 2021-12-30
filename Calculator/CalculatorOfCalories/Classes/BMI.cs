@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,8 @@ namespace CalculatorOfCalories
 
         public double CalculateBMI()
         {
-            return Mass / Math.Pow(Height, 2);
+            double height = Height / 100;
+            return Mass / Math.Pow(height, 2);
         }
 
         public string GetComment(double result)
@@ -40,6 +42,22 @@ namespace CalculatorOfCalories
                 return "Obundefinedesity 3st degree";
 
             return "";
+        }
+
+        public static void Save(double mass, double height, double result, string comment)
+        {
+            Directory.CreateDirectory("BMI");
+
+            string data = DateTime.Now.Year + "_" + DateTime.Now.Month + "_" + DateTime.Now.Day
+                   + " " + DateTime.Now.Hour + "_" + DateTime.Now.Minute + "_" + DateTime.Now.Second;
+
+            using (StreamWriter writer = new StreamWriter(@"BMI/" + data + ".txt"))
+            {
+                writer.WriteLine("Your mass: " + mass);
+                writer.WriteLine("Your height: " + height);
+                writer.WriteLine("Your BMI: " + result);
+                writer.WriteLine("Comment: " + comment);
+            }
         }
     } 
 }
