@@ -22,6 +22,7 @@
                 <MenuItem Header="Save list of products" Name="SaveListProducts" Click="SaveListProducts_Click"/>
                 <MenuItem Header="Save list of dishes" Name="SaveListDishes" Click="SaveListDishes_Click"/>
                 <MenuItem Header="Save result" IsEnabled="False" Name="SaveResult" Click="SaveResult_Click"/>
+                <MenuItem Header="BMI (Body mass index)" IsEnabled="False" Name="BMI" Click="BMI_Click"/>
             </MenuItem>
         </Menu>
         <UniformGrid Columns="2">

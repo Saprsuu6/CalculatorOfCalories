@@ -132,11 +132,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\coffe\\Desktop\\CommandCalculator\\CommandCalculator-test3\\CalculatorOfCalories\\CalculatorOfCalories.csproj",
+      "projectUniqueName": "C:\\Users\\coffe\\Desktop\\CalculatorOfCalories\\Calculator\\CalculatorOfCalories\\CalculatorOfCalories.csproj",
       "projectName": "CalculatorOfCalories",
-      "projectPath": "C:\\Users\\coffe\\Desktop\\CommandCalculator\\CommandCalculator-test3\\CalculatorOfCalories\\CalculatorOfCalories.csproj",
+      "projectPath": "C:\\Users\\coffe\\Desktop\\CalculatorOfCalories\\Calculator\\CalculatorOfCalories\\CalculatorOfCalories.csproj",
       "packagesPath": "C:\\Users\\coffe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\coffe\\Desktop\\CommandCalculator\\CommandCalculator-test3\\CalculatorOfCalories\\obj\\",
+      "outputPath": "C:\\Users\\coffe\\Desktop\\CalculatorOfCalories\\Calculator\\CalculatorOfCalories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -104,7 +104,7 @@ namespace CalculatorOfCalories {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CalculatorOfCalories;component/changeproduct.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CalculatorOfCalories;V1.0.0.0;component/changeproduct.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ChangeProduct.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

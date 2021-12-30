@@ -32,6 +32,7 @@ namespace CalculatorOfCalories
             mainWindow.saveResult += new EventHandler<EventArgs>(SaveResult);
             mainWindow.EventSaveListOfProducts += new EventHandler<EventArgs>(SaveListOfProducts);
             mainWindow.EventSaveListOfDishes += new EventHandler<EventArgs>(SaveListOfDishes);
+            mainWindow.EventBMI += new EventHandler<EventArgs> (BMI);
 
             logger.Info("Application was run");
         }
@@ -517,6 +518,29 @@ namespace CalculatorOfCalories
                 deleteDish.GetSetDishes.Items.Add(dish.Name);
 
             deleteDish.GetSetDishes.SelectedIndex = 0;
+        }
+        #endregion
+
+        #region BMI
+        private void BMI(object? sender, EventArgs e)
+        {
+            bmi? bmi = sender as bmi;
+            bmi.save += new EventHandler<EventArgs>(SaveBMI);
+
+            bmi.GetSetMass = mainWindow.GetSetWeight;
+            bmi.GetSetHeight = mainWindow.GetSetHeight;
+
+            BMI tempBMI = new BMI(bmi.GetSetMass, bmi.GetSetHeight);
+            double result = tempBMI.CalculateBMI();
+            string comment = tempBMI.GetComment(result);
+
+            bmi.Result.Text = result.ToString();
+            bmi.Comment.Text = comment;
+        }
+
+        private void SaveBMI(object? sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
         #endregion
     }

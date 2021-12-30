@@ -51,6 +51,7 @@ namespace CalculatorOfCalories
 
         public event EventHandler<EventArgs> EventSaveListOfProducts;
         public event EventHandler<EventArgs> EventSaveListOfDishes;
+        public event EventHandler<EventArgs> EventBMI;
 
         public uint GetSetMobility { get => mobility; set => mobility = value; }
         public double GetSetResult { get => result; set => result = value; }
@@ -212,6 +213,26 @@ namespace CalculatorOfCalories
             Effect = null;
         }
 
+        private void BMI_Click(object sender, RoutedEventArgs e)
+        {
+            Effect = new BlurEffect();
+
+            bmi bmi = new bmi(Resources.MergedDictionaries[0]);
+
+            try
+            {
+                EventBMI.Invoke(bmi, new EventArgs());
+                bmi.Owner = this;
+                bmi.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+            Effect = null;
+        }
+
         private void Count_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -233,6 +254,7 @@ namespace CalculatorOfCalories
                 Result.Text = result.ToString();
 
                 MessageBox.Show("Calculate was succesfully", "", MessageBoxButton.OK, MessageBoxImage.Information);
+                BMI.IsEnabled = true;
             }
             catch (Exception ex)
             {
